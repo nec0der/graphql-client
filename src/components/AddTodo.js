@@ -1,6 +1,8 @@
 import React from 'react';
+import { useAddTodo } from '../operations/mutations/addTodo';
 
-const AddTodo = ({addTodo}) => {
+const AddTodo = () => {
+  const {addTodo} = useAddTodo();
   let input;
 
   const handleSubmit = (event) => {

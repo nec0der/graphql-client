@@ -26,5 +26,7 @@ export function useAddTodo() {
     },
   });
 
-  return { mutate, data, error };
+  const addTodo = (text) => mutate({ variables: { text } })
+
+  return { addTodo, data, error };
 }
