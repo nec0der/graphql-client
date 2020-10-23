@@ -1,19 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { ApolloProvider } from '@apollo/client';
 
-
 const client = new ApolloClient({
   uri: 'https://api-us-west-2.graphcms.com/v2/ckggu17e19lac01z2hlzi8y8s/master',
-  onError: (e) => { console.log(e) },
   cache: new InMemoryCache(),
-  
 });
-
 
 ReactDOM.render(
   <React.StrictMode>

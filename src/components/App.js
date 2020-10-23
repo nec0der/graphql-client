@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Todos from './Todos';
-import AddTodo from './AddTodo'
+import TodoList from '../containers/TodoList';
+import AddTodo from '../containers/AddTodo'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <AddTodo/>
       </header>
       <section className='main'>
-        <Todos/>
+        <TodoList/>
       </section>
     </div>
   );
